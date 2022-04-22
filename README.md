@@ -1,7 +1,7 @@
 # Kafka Producer C# コンソールアプリケーション
 
 ## 概要
-　Kafka Producer 用の C# コンソールアプリケーションです。[Azure Functions の Kafka Trigger を利用した C# サンプル](https://github.com/Yuichi-Ikeda/KafkaFunctionApp)の為の負荷ツールとして作成しています。
+　Kafka Producer 用の C# コンソールアプリケーションです。[Azure Functions の Kafka Trigger を利用した C# サンプル](https://github.com/Yuichi-Ikeda/KafkaFunctionApp)の負荷ツールとして作成しています。
 
 [ベースサンプル](https://developer.confluent.io/get-started/dotnet#build-producer)を元に最新版の Visual Studio 2022 にて新規作成しています。
 
