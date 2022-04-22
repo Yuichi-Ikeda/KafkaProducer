@@ -16,9 +16,10 @@ namespace KafkaProducer
     {
         static void Main(string[] args)
         {
-            if (args.Length != 1)
+            if (args.Length < 1)
             {
                 Console.WriteLine("Please provide the configuration file path as a command line argument");
+                Console.WriteLine("e.g. KafkaProducer.exe <configuration file path> [numMessages]");
             }
 
             IConfiguration configuration = new ConfigurationBuilder()
@@ -31,7 +32,11 @@ namespace KafkaProducer
                 configuration.AsEnumerable()).Build())
             {
                 var numProduced = 0;
-                const int numMessages = 2;
+                int numMessages = 5;
+
+                if (args.Length == 2)
+                    int.TryParse(args[1], out numMessages);
+
                 for (int i = 0; i < numMessages; ++i)
                 {
                     var item = JsonConvert.SerializeObject(new KafkaMessage

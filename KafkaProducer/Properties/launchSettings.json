@@ -2,7 +2,7 @@
   "profiles": {
     "KafkaProducer": {
       "commandName": "Project",
-      "commandLineArgs": "C:\\Users\\yuichii\\Desktop\\Kafka.config"
+      "commandLineArgs": "C:\\Users\\yuichii\\Desktop\\Kafka.config 10"
     }
   }
 }
