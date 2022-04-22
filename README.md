@@ -18,4 +18,6 @@ sasl.username=<Your API Key>
 sasl.password=<Your API Secret>
 ```
 
-KafkaProducer.exe <configuration file path> [numMessages]
+```Command.cmd
+KafkaProducer.exe [configuration file path] [numMessages]
+```
