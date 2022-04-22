@@ -17,3 +17,5 @@ sasl.mechanisms=PLAIN
 sasl.username=<Your API Key>
 sasl.password=<Your API Secret>
 ```
+
+KafkaProducer.exe <configuration file path> [numMessages]
